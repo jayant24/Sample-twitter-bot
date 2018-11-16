@@ -1,0 +1,8 @@
+# Using tweepy
+Tweepy supports accessing Twitter via Basic Authentication and the newer method, OAuth. Twitter has stopped accepting Basic 
+Authentication so OAuth is now the only way to use the Twitter API.
+
+Tweepy provides access to the well documented Twitter API. With tweepy, it's possible to get any object and use any method
+that the official Twitter API offers. For example, a User object has its documentation at 
+https://dev.twitter.com/docs/platform-objects/users and following those guidelines, tweepy can get the appropriate information.
+
