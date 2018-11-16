@@ -5,14 +5,11 @@ import time
 # from this main file.
 # Please refer to keys_format.py to see the format.
 
-CONSUMER_KEY = 'cC8XpTSrvqVFr2mahN90O28Vd'
-CONSUMER_SECRET = 'iuc2oZGrc0Yb0WHwHsLKwo7A5Q2yhfqxIawG4gWrDYviaBMTyP'
-ACCESS_KEY = '819212305766481920-mll2kbqQ5XpjwZHX1n0b24QQTXOjkXO'
-ACCESS_SECRET = 'JVUCDTdQ2B0EnPo2dWhR4oDQwcM1CgM3Jd7Ngn65J0h18'
+CONSUMER_KEY = 'AAAAAAAAAAAAA'
+CONSUMER_SECRET = 'BBBBBBBBBBB'
+ACCESS_KEY = 'CCCCCCCCCC'
+ACCESS_SECRET = 'DDDDDDDDDDD'
 
-# NOTE: flush=True is just for running this script
-# with PythonAnywhere's always-on task.
-# More info: https://help.pythonanywhere.com/pages/AlwaysOnTasks/
 print('this is my twitter bot')
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
