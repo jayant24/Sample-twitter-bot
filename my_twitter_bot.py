@@ -48,7 +48,7 @@ def reply_to_tweets():
             print('found your #helloworld! BTW i am not your world')
             print('responding back...duh!')
             api.update_status('@' +mention.user.screen_name+  
-                ' I love you, back to you!!', mention.id)
+                ' A tweet, back to you!!', mention.id)
 
 while True:
     reply_to_tweets()
