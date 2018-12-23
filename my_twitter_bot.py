@@ -5,11 +5,14 @@ import time
 # from this main file.
 # Please refer to keys_format.py to see the format.
 
-CONSUMER_KEY = 'AAAAAAAAAAAAA'
-CONSUMER_SECRET = 'BBBBBBBBBBB'
-ACCESS_KEY = 'CCCCCCCCCC'
-ACCESS_SECRET = 'DDDDDDDDDDD'
+CONSUMER_KEY = 'cC8XpTSrvqVFr2mahN90O28Vd'
+CONSUMER_SECRET = 'iuc2oZGrc0Yb0WHwHsLKwo7A5Q2yhfqxIawG4gWrDYviaBMTyP'
+ACCESS_KEY = '819212305766481920-mll2kbqQ5XpjwZHX1n0b24QQTXOjkXO'
+ACCESS_SECRET = 'JVUCDTdQ2B0EnPo2dWhR4oDQwcM1CgM3Jd7Ngn65J0h18'
 
+# NOTE: flush=True is just for running this script
+# with PythonAnywhere's always-on task.
+# More info: https://help.pythonanywhere.com/pages/AlwaysOnTasks/
 print('this is my twitter bot')
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -44,12 +47,15 @@ def reply_to_tweets():
         print(str(mention.id) + ' - ' + mention.full_text)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
-        if '#helloworld' in mention.full_text.lower():
-            print('found your #helloworld! BTW i am not your world')
-            print('responding back...duh!')
+        if '#hello' in mention.full_text.lower():
+            print('found your #hello! BTW i am not Jayant')
+            print('responding back...!')
             api.update_status('@' +mention.user.screen_name+  
-                ' A tweet, back to you!!', mention.id)
+                ' <333 ', mention.id)
+
 
 while True:
     reply_to_tweets()
-    time.sleep(15)
+    time.sleep(3)
+
+
